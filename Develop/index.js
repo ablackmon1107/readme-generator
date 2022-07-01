@@ -71,21 +71,15 @@ const questions = [
     
 
 // TODO: Create a function to write README file
-inquirer.prompt([questions], function(answers){
+inquirer.prompt([questions], function (response);
+    .then(data=> {
+        return generateMarkdown(data);
 
-
-function writeToFile(fil, data) {fs.writeFile('README.md', markdownString, function(err) {
-    if(err) {
-        console.log(err)
-    
-    else {
-        console.log('Check out your new README.md')
-    }
-}
-// TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt([questions] ,function(answers)
-};
+    .then(markdownStringGIT  => {
+        function writeToFile(markdownString);
+    })
 
 // Function call to initialize app
-init();
+function init(){
+    promptQuestions()
+};
